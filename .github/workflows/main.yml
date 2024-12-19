@@ -34,10 +34,10 @@ jobs:
            -Dsonar.jacoco.reportsPath=target/jacoco.exec
            -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml
            -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/controllerTest/
-
+           
   Build_And_Publish:
     needs: Testing
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
     steps:
       - name: Code-checkout
         uses: actions/checkout@v4
